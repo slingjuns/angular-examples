@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Course List</h1>
+  <div>
+    <label for="searchId">Search Course ID:</label>
+    <input type="text" [(ngModel)]="searchId" (input)="searchById()" id="searchId" placeholder="Enter course ID">
+  </div>
+  <ul>
+    <li *ngFor="let todo of filteredTodos">
+      <div>
+        <h2>{{ todo.title }}</h2>
+        <p>ID: {{ todo.id }}</p>
+        <p>User ID: {{ todo.userId }}</p>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,11 @@
+<div class="todo-detail">
+  <h2>Todo Details</h2>
+  <div>
+    <p><strong>Title:</strong> {{todo.title}}</p>
+    <p><strong>ID:</strong> {{todo.id}}</p>
+    <p><strong>User ID:</strong> {{todo.userId}}</p>
+    <p><strong>Completed:</strong> {{todo.completed ? 'Yes' : 'No'}}</p>
+  </div>
+  <button (click)="deleteTodo()">Delete Todo</button>
+  <a routerLink="/courses">Back to Main Page</a>
+</div>
